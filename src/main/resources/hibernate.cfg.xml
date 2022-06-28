@@ -4,13 +4,10 @@
         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
     <session-factory>
-        <property name="connection.url">jdbc:oracle:thin:@172.20.101.63:1521:orcl</property>
-        <!--<property name="connection.url">jdbc:oracle:thin:@IP:PORT:SID</property>-->
+        <property name="connection.url">jdbc:oracle:thin:@IP:PORT:SID</property>
         <property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
-        <!--<property name="connection.username">USERNAME</property>-->
-        <property name="connection.username">MEBAPP</property>
-        <!--<property name="connection.password">PASSWORD</property>-->
-        <property name="connection.password">MEBAPP123456</property>
+        <property name="connection.username">USERNAME</property>
+        <property name="connection.password">PASSWORD</property>
         <property name="dialect">org.hibernate.dialect.Oracle10gDialect</property>
 
         <property name="hibernate.c3p0.min_size">5</property>
